@@ -1,13 +1,13 @@
-package com.example.uiespressotest.espresso._02
+package com.example.uiespressotest.espresso._02_fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import androidx.fragment.app.DialogFragment
 import com.example.uiespressotest.databinding.FragmentSample02Binding
 
-class SampleFragment: Fragment() {
+class SampleDialogFragment : DialogFragment() {
 
     private var _binding: FragmentSample02Binding? = null
     private val binding get() = _binding!!
@@ -39,6 +39,15 @@ class SampleFragment: Fragment() {
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
+    }
+
+    companion object {
+        fun newInstance(): SampleDialogFragment {
+            return SampleDialogFragment().apply {
+                arguments = Bundle().apply {
+                }
+            }
+        }
     }
 
 }

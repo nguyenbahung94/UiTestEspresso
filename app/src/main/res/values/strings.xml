@@ -5,4 +5,12 @@
     <string name="type_something">type something…</string>
     <string name="open_activity_and_change_text">Open activity and change text</string>
     <string name="hello_fragment">I am a fragment</string>
+    <string name="type_a_phone_number">Please enter a number…</string>
+    <string name="button_dial_number">Call Number</string>
+    <string name="button_pick_contact">Pick Number</string>
+    <string name="contacts_activity_placeholder">This a placeholder Activity for a contacts screen.
+        This activity is never opened and does not contain any real contact data for
+        keeping this sample simple and focused.
+    </string>
+    <string name="warning_call_phone_permission">This app requires \'call phone\' permission to run</string>
 </resources>

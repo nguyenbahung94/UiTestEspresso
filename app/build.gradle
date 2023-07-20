@@ -50,9 +50,13 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:' + rootProject.extJUnitVersion
     androidTestImplementation 'androidx.test.ext:junit-ktx:' + rootProject.extJUnitVersion
     androidTestImplementation 'androidx.test.espresso:espresso-core:' + rootProject.espressoVersion
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:' + rootProject.espressoVersion
     androidTestImplementation 'androidx.test:runner:1.5.2'
     androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
     androidTestImplementation "androidx.test.ext:truth:1.5.0"
+    androidTestImplementation 'org.robolectric:annotations:' + rootProject.robolectricVersion
+
     androidTestUtil "androidx.test:orchestrator:1.4.2"
     testImplementation 'androidx.test:core:' + rootProject.coreVersion;
     testImplementation 'androidx.test.ext:junit:' + rootProject.extJUnitVersion
@@ -65,5 +69,7 @@ dependencies {
     debugImplementation ('androidx.fragment:fragment-testing:' + rootProject.androidxFragmentVersion){
         exclude group: 'androidx.test', module: 'core'
     }
+    testImplementation 'org.robolectric:robolectric:' + rootProject.robolectricVersion
+
     debugImplementation("androidx.tracing:tracing:1.1.0")
 }

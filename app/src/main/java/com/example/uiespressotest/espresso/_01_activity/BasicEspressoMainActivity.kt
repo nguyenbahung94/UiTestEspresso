@@ -1,4 +1,4 @@
-package com.example.uiespressotest.espresso._01
+package com.example.uiespressotest.espresso._01_activity
 
 import android.os.Bundle
 import android.view.View
