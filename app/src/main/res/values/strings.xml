@@ -13,4 +13,5 @@
         keeping this sample simple and focused.
     </string>
     <string name="warning_call_phone_permission">This app requires \'call phone\' permission to run</string>
+    <string name="button_open_camera">Take photo</string>
 </resources>

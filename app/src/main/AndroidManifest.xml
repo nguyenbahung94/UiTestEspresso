@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
-
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,7 +16,7 @@
         android:theme="@style/Theme.UiEspressoTest"
         tools:targetApi="31">
         <activity
-            android:name=".espresso._03_intent.DialerActivity03"
+            android:name=".espresso._03_intent.ImageViewerActivity03"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
